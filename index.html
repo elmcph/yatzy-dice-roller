@@ -6,7 +6,7 @@
     <script src="elm.js"></script>
   </head>
   <body>
-    <script>var seed = Math.floor(Math.random() * Date.now());
+    <script>var seed = Math.floor(Math.random() * 0xFFFFFFFF);
             var runningElmModule = Elm.fullscreen(Elm.Yatzy.Roller, {jsSeed: seed});</script>
   </body>
 </html>
