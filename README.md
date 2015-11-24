@@ -40,6 +40,16 @@ Note that this exercise does not involve keeping track of players or their score
 
 Fork this repository to your own GitHub account. This will allow us to compare solutions using [the forks view for this project on Github](https://github.com/elmcph/yatzy-dice-roller/network).
 
+Then do the following
+```sh
+git clone git@github.com:<your github account>/yatzy-dice-roller
+cd yatzy-dice-roller
+elm make --output elm.js Yatzy/Roller.elm
+elm reactor
+```
+Open http://localhost:8000/index.html
+
+Note screen will be blank until you start filling doing the exercise
 ## Attribution
 
 The inspiration and assets used in this exercise comes from Joseph Collard's examples of generating random numbers in Elm.
