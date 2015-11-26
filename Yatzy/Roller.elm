@@ -5,9 +5,7 @@ import Random
 
 -- Main
 
-{--
-main = show <| randomSide initialSeed
---}
+main = 
 
 -- Model
 
@@ -25,7 +23,8 @@ main = show <| randomSide initialSeed
 
 -- Get an external input to use as seed for Random generator.
 -- See the index.html for how that is done
-port jsSeed : Int
+--port jsSeed : Int
+jsSeed = 42
 
 initialSeed : Random.Seed
 initialSeed = Random.initialSeed jsSeed

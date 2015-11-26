@@ -22,11 +22,13 @@ Note that this exercise does not involve keeping track of players or their score
 
   - [ ] Create a Model that can hold the generated roll value and the new seed
 
-  - [ ] Write an `update` function to udpate your Model
+  - [ ] Write an `update` function to udpate your Model. Remember to update both roll and seed.
 
   - [ ] Wire things up using `Signal.map` and `Signal.foldp` and an approprate Signal from `Keyboard` module
 
   - [ ] Extend the `view` and `Model` to handle 5 dices
+
+  - [ ] enable the `jsFeed` port and load index.html to get a random starting point
 
 ### Extra tasks
 
@@ -47,7 +49,9 @@ cd yatzy-dice-roller
 elm make --output elm.js Yatzy/Roller.elm
 elm reactor
 ```
-Open http://localhost:8000/index.html
+Start by opening the Roller.elm directly in the reactor: http://localhost:8000/Yatzy/Roller.elm
+
+When you enable the `jsSeed` port, you should switch to http://localhost:8000/index.html to the the port initialized, but then you need to compile your Roller.elm manually (to elm.js - see above)
 
 Note screen will be blank until you start filling doing the exercise
 ## Attribution
